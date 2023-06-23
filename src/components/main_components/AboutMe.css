@@ -1,0 +1,97 @@
+.aboutMe {
+	margin: 125px 0;
+		align-items: center;
+}
+
+.aboutMe_container {
+	display: grid;
+		grid-template-columns: 1fr 1fr;
+}
+                      
+.title {
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 70px;
+	text-align: center;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 43px;
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 160px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 9px;
+}
+
+.myExp {
+	display: flex;
+}
+
+.subtitle {
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 59px;
+}
+
+.whyI {
+	border-right: 1px solid gray;
+	padding-right: 25px;
+	align-items: center;
+}
+
+.items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+text-align: center;
+}
+
+.item h3 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 53px;
+	color: #757575;
+	margin-bottom: 10px;
+}
+
+.item {
+	font-style: normal;
+	font-weight: 420;
+	font-size: 20px;
+	line-height: 20px;
+	color: #212121;
+}
+
+.item2 h3{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 53px;
+	line-height: 62px;
+	text-align: center;
+	color: #212121;
+}
+
+.myExp {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 55px;
+	align-items: center;
+}
+
+.item2 p {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #212121;
+	text-align: center;
+}
