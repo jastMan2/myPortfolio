@@ -18,29 +18,31 @@ export default function Services() {
 			<div className='slider'>{slideElement}</div>
 		</div>
 	)
-	const slides = document.querySelector(".product");
 	let activeOrder = 0;
 
 	slideLogik();
 
 	function slideLogik() {
-		for (let i = 0; i < slides.length; i++) {
-			const slide = slides[i];
-
-			slide.dataset.order = i;
+		for (let i = 0; i < slidesData.length; i++) {
+			const slide = slidesData[i];
+			slide.dataset = i;
 		}
-		activeOrder = Math.floor(slides.length / 2);
-
+		activeOrder = Math.floor(slidesData.length / 2);
+		
 		update();
 	}
 	function update() {
-		for (let i = 0; i < slides.length; i++) {
-			const leftSlide = document.querySelector(
-				`.slider[data-order="${activeOrder - i}"]`
-			);
-			const rightSlide = document.querySelector(
-				`.slider[data-order="${activeOrder +i}"]`
-			);
+		for (let i = 0; i < slidesData.length; i++) {
+			const leftSlide = (slidesData.id = activeOrder - i);
+
+			if (leftSlide) {
+				leftSlide.style.left=`${30}px`
+			}
+			const rightSlide = (slidesData.id = activeOrder + i);
+
+			if (rightSlide) {
+				rightSlide.style.right=`${30}px`
+			}
 		}
 	}
 }
